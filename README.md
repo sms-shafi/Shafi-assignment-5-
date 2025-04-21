@@ -26,3 +26,36 @@ else:
 ```
 Enter the student's name: shafi
 shafi's marks:  25
+```
+---
+# Task 2: Demonstrate List Slicing 
+---
+# code:
+```
+numbers = list(range(1, 11))
+# Creates a list 1 to 10
+
+first_five_elements = numbers[:5]
+# Extracts the first 5 elements: [1, 2, 3, 4, 5]
+
+reverse_five_elements = first_five_elements.copy()
+# Creates a copy so the original is unchanged
+
+reverse_five_elements.reverse()
+# Reverses the copied list
+
+print('Original list:', numbers)
+# print's  the full list
+
+print('Extracted first five elements:', first_five_elements)
+# print's the first five elements
+
+print('Reversed extracted elements:', reverse_five_elements)
+# reverses the extracted copy list
+```
+# Eample output:
+```
+Original list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Extracted first five elements: [1, 2, 3, 4, 5]
+Reversed extracted elements: [5, 4, 3, 2, 1]
+
